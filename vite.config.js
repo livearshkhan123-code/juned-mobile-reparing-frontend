@@ -3,5 +3,5 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/juned-mobile-repairing-frontend/',
+  base: '/juned-mobile-reparing-frontend/',
 })
