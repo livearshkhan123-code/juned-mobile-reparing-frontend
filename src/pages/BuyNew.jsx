@@ -29,7 +29,7 @@ function BuyNew() {
       return
     }
 
-    const shopNumber = '919580748970'
+    const shopNumber = '919936152556'
 
     const whatsappMessage = `New Phone Enquiry
 

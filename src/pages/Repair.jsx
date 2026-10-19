@@ -22,7 +22,7 @@ function Repair() {
 
 
         
-        const shopNumber = '919580748970'
+        const shopNumber = '919936152556'
         const whatsappMessage = `Mobile Repair Request
         Customer Name: ${customerName}
         Contact Number: ${contactNumber}
