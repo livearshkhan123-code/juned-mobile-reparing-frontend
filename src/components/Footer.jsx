@@ -14,7 +14,7 @@ function Footer() {
 
         <p>
           Phone:{' '}
-          <a href="tel:+919580748970">
+          <a href="tel:+919936152556">
             +91 98765 43210
           </a>
         </p>
@@ -22,7 +22,7 @@ function Footer() {
         <p>
           WhatsApp:{' '}
           <a
-            href="https://wa.me/919580748970"
+            href="https://wa.me/919936152556"
             target="_blank"
             rel="noreferrer"
           >
@@ -32,15 +32,15 @@ function Footer() {
 
         <p>
           Email:{' '}
-          <a href="mailto:yourshop@example.com">
-            yourshop@example.com
+          <a href="mailto:junedkhan123@gmail.com">
+            junedkhan123@gmail.com
           </a>
         </p>
 
         <p>
           Instagram:{' '}
           <a
-            href="https://www.instagram.com/yourusername/"
+            href="https://www.instagram.com/insta_junedkhan12/"
             target="_blank"
             rel="noreferrer"
           >
