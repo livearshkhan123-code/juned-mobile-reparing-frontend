@@ -44,7 +44,8 @@ function ProtectedAdmin() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/
+     juned-mobile-reparing-frontend'>
       <Routes>
         
         <Route path="/" element={<MainWebsite />} />
