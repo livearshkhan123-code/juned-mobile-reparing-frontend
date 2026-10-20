@@ -26,7 +26,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            Chat on WhatsApp
+           9936152556
           </a>
         </p>
 
@@ -44,7 +44,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            Visit Instagram
+          insta_junedkhan12
           </a>
         </p>
       </div>

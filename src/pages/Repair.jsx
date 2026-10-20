@@ -17,7 +17,7 @@ function Repair() {
         const mobileIssue = form.elements[3].value
         const problemDescription = form.elements[4].value
 
-        const photoInput = form.querySelector(`imput[type="file"]`);
+        const photoInput = form.querySelector(`input[type="file"]`);
         const photos = photoInput?.files;
 
 
@@ -31,42 +31,15 @@ function Repair() {
         Problem Description: ${problemDescription}`;
         
 
-try {
-   const formData = new FormData();
+const whatsappURL =
+  `https://wa.me/${shopNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-  formData.append('customerName', customerName);
-  formData.append('contactNumber', contactNumber);
-  formData.append('phoneModel', phoneModel);
-  formData.append('mobileIssue', mobileIssue);
-  formData.append('problemDescription', problemDescription);
+window.open(whatsappURL, '_blank');
 
-  if (photos) {
-    for (const photo of photos) {
-      formData.append('photos', photo);
-    }
-  }
+setMessage('THANK YOU! Your repair request has been received. Our team will contact you to discuss the issue and estimate the cost.');
 
-  const response = await fetch('http://localhost:8080/api/repairs', {
-    method: 'POST',
-    body: formData
-  });
+form.reset();
 
-  if (!response.ok) {
-      throw new Error('Booking could not be saved');
-    }
-
-    const whatsappURL =
-      `https://wa.me/${shopNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
-    window.open(whatsappURL, '_blank');
-
-    setMessage('THANK YOU! Your repair request has been received. Our team will contact you to discuss the issue and estimate the cost.');
-
-    form.reset();
-  } catch (error) {
-    setMessage('Booking could not be saved. Please try again.');
-    console.error(error);
-  }
 }}>
         <label>Customer Name</label>
         <input 
@@ -74,7 +47,7 @@ try {
         placeholder="Enter your name"
         pattern="[A-Za-z\s]+"
         title="Please enter letters only"
-        on change={(e) => {
+        onChange={(e) => {
           e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, '')
         }}
         required
@@ -87,7 +60,7 @@ try {
         pattern="[0-9]{10}"
         minLength={10}
         maxLength={10}
-        on change={(e) => {
+        onChange={(e) => {
           e.target.value = e.target.value.
           replace(/[^0-9]/g, '')
           .slice(0, 10)
